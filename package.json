@@ -1,6 +1,6 @@
 {
   "name": "express-jwt-acl-mongoose-starter",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Express & Mongoose starter kit written in ES6 for NodeJS.",
   "main": "src/server.js",
   "repository": {
