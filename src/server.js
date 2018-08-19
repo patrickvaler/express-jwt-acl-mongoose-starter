@@ -17,26 +17,27 @@ expressConfig(app);
 app.use(auth.initialize());
 auth.setJwtStrategy();
 
-
-mongoose.connect(config.db, (err) => {
+mongoose.connect(
+  config.db,
+  err => {
     if (err) {
-        console.log(`[MongoDB] Failed to connect. ${err}`);
+      console.log(`[MongoDB] Failed to connect. ${err}`);
     } else {
-        console.log(`[MongoDB] connected: ${config.db}`);
-        authorizationSetup();
+      console.log(`[MongoDB] connected: ${config.db}`);
+      authorizationSetup();
     }
-});
+  }
+);
 
 app.listen(config.apiPort, () => {
-    console.log(`[Server] listening on port ${config.apiPort}`);
+  console.log(`[Server] listening on port ${config.apiPort}`);
 });
 
 function authorizationSetup() {
-    aclConfig(mongoose.connection.db);
+  aclConfig(mongoose.connection.db);
 
-    // initialize api
-    routesConfig(app);
+  // initialize api
+  routesConfig(app);
 }
-
 
 export default app;

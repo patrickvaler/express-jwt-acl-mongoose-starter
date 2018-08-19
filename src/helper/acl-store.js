@@ -1,15 +1,15 @@
 class AclStore {
-    constructor() {
-        this._acl = null;
-    }
+  constructor() {
+    this._acl = null;
+  }
 
-    set acl(acl) {
-        this._acl = acl;
-    }
+  set acl(acl) {
+    this._acl = acl;
+  }
 
-    get acl() {
-        return this._acl;
-    }
+  get acl() {
+    return this._acl;
+  }
 }
 
 const aclStore = new AclStore();
