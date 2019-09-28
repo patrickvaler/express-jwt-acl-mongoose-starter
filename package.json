@@ -31,7 +31,7 @@
     "eslint-config-airbnb-base": "^13.0.0",
     "eslint-plugin-import": "^2.2.0",
     "mocha": "^5.2.0",
-    "mockgoose": "^7.3.1",
+    "mockgoose": "^8.0.3",
     "nodemon": "^1.11.0"
   },
   "scripts": {
